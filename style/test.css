@@ -1,0 +1,293 @@
+html {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-size: 14px;
+    line-height: 16px;
+    margin: auto;
+  }
+  .header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #629b57;
+    position: fixed;
+  }
+  .center{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1% 0;
+  }
+  .delete button{
+      background: transparent;
+      border: none;
+  }
+  .main{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    background: #60a75e;
+  }
+  .information{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding-bottom: 20rem;
+  }
+  .description{
+      color: #ffffff;
+      width: 60%;
+  }
+  .description .title{
+      font-family: 'Roboto Mono', monospace;
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 3rem;
+  }
+  .text-wrapper{
+    display: inline-flex;
+  }
+  .description .subtitle{
+      font-size: 1.375rem;
+      font-family: 'Roboto Mono', monospace;
+      display: inline-flex;
+  }
+  .yellow{
+      color: #ffea00;
+  }
+  .calculate{
+      width: 40%;
+      background: #ffffff;
+      padding: 2%;
+  }
+  .calculate .title{
+    font-family: Lato;
+    font-size: 1.25rem;
+    line-height: 3rem;
+  }
+  .result{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .calc{
+    display: flex;
+    width: 46%;
+    border: 1px solid #a1a1a1;
+    border-radius: 3px;
+  }
+  .choose{
+    font-family: 'Lato', sans-serif;
+    color: #999999;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .select{
+    display: flex;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+  }
+  #level{
+    width: 90%;
+    height: 2rem;
+    border: 1px solid #a1a1a1;
+    border-radius: 3px;
+  }
+  .calc button{
+    background: #606760;
+    color: #ffffff;
+    width: 30%;
+    border: none;
+    background: linear-gradient(#919691 0%, #606760 90%);
+  }
+  .calc input{
+      width: 40%;
+      border: none;
+      height: auto;
+      text-align: center;
+  }
+  .quantity{
+    font-family: 'Lato', sans-serif;
+    color: #999999;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .sum{
+    width: 40%;
+    display: flex;
+    border: 1px solid #a1a1a1;
+    border-radius: 3px;
+  }
+  .summary{
+    width: 50%;;
+  }
+  .summary button{
+    background: #606760;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    background: linear-gradient(#919691 0%, #606760 90%);
+  }
+  .pop-up{
+    width: 50%;
+  }
+  .pop-up button{
+      background: #7cd578;
+      color: #ffffff;
+      border: none;
+      width: 100%;
+  }
+  .footer{
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+  }
+
+  /********************************************helpDialog*****************************************************/
+
+#helpDialog {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #00000057;
+}
+.contentDialog {
+  display: flex;
+  flex-direction: column;
+	width: 29rem;
+  height: 26rem;
+	margin: 10% auto;
+	padding: 1%;
+	background: #fff;
+  border-radius: 3px;
+  font-family: Lato;
+}
+.headerDialog{
+  display: flex;
+  justify-content: flex-end;
+}
+.headerDialog button{
+  background: transparent;
+  border: none;
+}
+.titleDialog{
+  font-size: 1.25rem;
+  color: #333333;
+  text-align: center;
+}
+.subtitleDialog{
+  font-size: 1rem;
+  color: #999999;
+  text-align: center;
+}
+label{
+  font-size: 1rem;
+  color: #999999;
+  line-height: 2rem;
+}
+
+.enterName img{
+  position: absolute;
+  right: 72.5rem;
+  top: 22.8rem;
+}
+.enterEmail img{
+  position: absolute;
+  right: 72.5rem;
+  top: 27.2rem;;
+}
+.continue{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+.continueBtn{
+  font-size: 1rem;
+  color: #ffffff;
+  background: #83d880;
+  border: 1px solid #83d880;
+  border-radius: 3px;
+  width: 30%;
+  height: 4vh;
+}
+.contentDialog input{
+  border: 1px solid #a1a1a1;
+  width: 90%;
+  height: 3vh;
+}
+
+
+/************************************thankDialog*******************************************/
+#thankDialog {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #00000057;
+}
+.contentThank {
+  display: flex;
+  flex-direction: column;
+	width: 29rem;
+  height: 26rem;
+	margin: 10% auto;
+	padding: 1%;
+	background: #fff;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+}
+.headerThank{
+  display: flex;
+  justify-content: flex-end;
+}
+.headerThank button{
+  background: transparent;
+  border: none;
+}
+.mainThank{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8%;
+}
+.thankYou{
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #333333;
+}
+.checkEmail{
+  color: #999999;
+  font-size: 1rem;
+}
+.ok{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.okBtn{
+  font-size: 1rem;
+  color: #ffffff;
+  background: #83d880;
+  border: 1px solid #83d880;
+  border-radius: 3px;
+  width: 27%;
+  height: 3vh;
+}
+

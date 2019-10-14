@@ -1,0 +1,58 @@
+@media screen and (max-width:600px){
+   .header{
+    height: 4.5rem;
+   }
+   .center{
+    width: 90%;
+    align-items: center;
+    font-size: 0.875rem;;
+   }
+   .information{
+    flex-direction: column;
+    width: 100%;
+   }
+   .description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .title{
+    width: 60%;
+   }
+   .title p{
+    font-size: 1.5625rem;
+   }
+   .description .subtitle{
+    font-size: 1.125rem;
+   }
+   .calculate{
+       width: 100%;
+       padding: 0;
+   }
+   .calc-wrapper{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+   }
+   .contentDialog{
+    width: 23rem;
+    margin-top: 16rem;
+   }
+   .mainDialog{
+    padding: 1rem;
+   }
+   .enterName img{
+    right: 20.5rem;
+    top: 26.5rem;
+   }
+   .enterEmail img{
+    right: 20.4rem;
+    top: 30.1rem;
+
+   }
+   .contentThank{
+    width: 23rem;
+    margin-top: 16rem;
+   }
+}
