@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="style/test.css" />  	
+  <link rel="stylesheet" href="style/test-adaptive.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header" id="header">
+            <div class="center">
+                    <div class="text">Lorem ipsum dolor sit amet donec voluptatem ipsum dolor sit amet donec voluptatem</div>
+                    <div class="delete"><button onclick='closeheader()'><img src="img/delete.svg"></button></div>
+            </div>
+    </div>
+    <div class="main">
+            <div class="information">
+                    <div class="description">
+                            <div class="title">
+                                    <p>Professional Сustom Service Just <span class="yellow">for You</span></p>
+                            </div>
+                            <div class="subtitle">
+                                    <p>We can do <span class="yellow">anything</span></p>
+                            </div>
+                    </div>
+                    <div class="calculate">
+                        <div class="calc-wrapper">
+                            <div class="title">Calculate the Price</div>
+                            <div class="choose">Choose level</div>
+                            <div class="select">
+                                    <select name="level" id="level">
+                                        <option>Hardcore</option>
+                                        <option>Middlecore</option>
+                                        <option>Lowcore</option>
+                                    </select>
+                            </div>
+                            <div class="quantity">How many</div>
+                            <div class="result">
+                                    <div class="calc">
+                                        <button onclick="changeAmount(this)" data-action="-">-</button>
+                                        <input id="stockAmountInput" value="1" oninput="onInput()" onchange="changeValue()" min="100">
+                                        <button onclick="changeAmount(this)" data-action="+">+</button>
+                                    </div>
+                                    <div class="sum">
+                                            <div class="summary">
+                                                    <button><p class="summaryPrice">$10.99</p></button>
+                                            </div>
+                                            <div class="pop-up" id="helpbutton">
+                                                    <button onClick='opendialog()' class='button'><p>Pop up</p></button>
+                                            </div>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="footer"></div>
+
+
+    <div id="helpDialog" title="Help dialog">
+        <div class="contentDialog">
+            <div class="headerDialog">
+                        <button onclick='closedialog()'><img src="img/delete2.svg"></button>
+            </div>
+            <div class="mainDialog">
+                        <div class="titleDialog">
+                                <p>Ask us how we can help you</p>
+                        </div>
+                        <div class="subtitleDialog">
+                                <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="form">
+                                <div class="enterName">
+                                        <label for="name">Enter your name</label><br>
+                                        <input type="text" name="name" id="name" required>
+                                        <img src="img/user_icon.svg">
+                                </div>
+                                <div class="enterEmail">
+                                        <label for="email">Enter your name</label><br>
+                                        <input type="email" name="email" id="email" required>
+                                        <img src="img/email_icon.svg">
+                                </div>
+                                <div class="phone">
+                                        <label for="phone">Your phone</label><br>
+                                        <input type="tel" id="phone" />
+                                </div>
+                        </div>
+                        <div class="continue">
+                                <button onClick='openthankdialog()' class="continueBtn">Continue></button>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div id="thankDialog" title="Thank you">
+                <div class="contentThank">
+                        <div class="headerThank">
+                                <button onclick='closethankdialog()'><img src="img/delete2.svg"></button>
+                        </div>
+                        <div class="mainThank">
+                                <div class="imgThank">
+                                        <img src="img/envelope.svg">
+                                </div>
+                                <div class="thankYou">
+                                        <p>Thank you!</p>
+                                </div>
+                                <div class="checkEmail">
+                                        <p>Please check your email</p>
+                                </div>
+                                <div class="ok">
+                                        <button onclick='closethankdialog()' class="okBtn">Ok, tnx</button>
+                                </div>
+                        </div>
+                </div>
+    </div>
+
+
+    <script src="js/test.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+</body>
+</html>
